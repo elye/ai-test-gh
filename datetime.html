@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Date & Time</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .datetime {font-size:1.2rem;margin-top:12px}
+    .back{display:inline-block;margin-top:16px}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Date & Time</h1>
+    <div class="datetime" id="datetime">Loading...</div>
+    <div class="back"><button id="back">Back</button></div>
+  </main>
+  <script>
+    function updateDateTime(){
+      var el = document.getElementById('datetime');
+      var now = new Date();
+      el.textContent = now.toLocaleString();
+    }
+    document.getElementById('back').addEventListener('click', function(){
+      window.location.href = 'index.html';
+    });
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+</body>
+</html>
