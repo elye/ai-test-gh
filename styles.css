@@ -1,0 +1,6 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f5f7fb}
+main{background:#fff;padding:32px;border-radius:12px;box-shadow:0 6px 20px rgba(20,30,60,.08);text-align:center}
+h1{font-size:1.8rem;margin-bottom:8px}
+p{color:#475569;margin-bottom:16px}
+button{padding:10px 16px;border-radius:8px;border:none;background:#2563eb;color:#fff;cursor:pointer;font-weight:600}
